@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <h1>Basic Table Structure</h1>
+    <h2>Table</h2>
+    <p>The table element is used to create a table. The contents of the table are written out row by row.</p>
+    <h2>tr</h2>
+    <p>You indicate the start of each row using the tr tag, at the end you use a closing /tr tag.</p>
+    <h2>td</h2>
+    <p>Each cell of a table is represented using a td element, at the end of each cell use a closing /td tag.</p>
+    <h2>Basic Table</h2>
+    <table>
+        <tr>
+            <td>15</td>
+            <td>15</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>60</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>60</td>
+            <td>90</td>
+            <td>90</td>
+        </tr>
+    </table>
+    <h2>Table Headings</h2>
+    <p>The th element is used to represent the heading for either a column or a row. 
+        Use the scope attribute on the th element to indicate whether it is a heading for a column or a row.
+    </p>
+    <h2>Table with headings</h2>
+    <table>
+        <tr>
+            <th></th>
+            <th scope="col">Saturday</th>
+            <th scope="col">Sunday</th>
+        </tr>
+        <tr>
+            <th scope="row">Tickets sold:</th>
+            <td>120</td>
+            <td>135</td>
+        </tr>
+        <tr>
+            <th scope="row">Total sales:</th>
+            <td>$600</td>
+            <td>$675</td>
+        </tr>
+    </table>
+    <h2>Spanning Columns</h2>
+    <p>The colspan attribute can be used on a th or td element
+         and indicates how many columns that cell shoud run across.</p>
+    <table>
+        <tr>
+            <th></th>
+            <th>9am</th>
+            <th>10am</th>
+            <th>11am</th>
+            <th>12am</th>
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <td colspan="2">Geography</td>
+            <td>Math</td>
+            <td>Art</td>
+        </tr>
+        <tr>
+            <th>Tuesday</th>
+            <td colspan="3">Gym</td>
+            <td>Home Ec</td>
+        </tr>
+    </table>
+</body>
+</html>
+
