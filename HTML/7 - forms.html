@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Form Structure</h1>
+    <p>Form controls live insde a form element.</p>
+    <p>Every form elements requires an action attribute. Its value is the URL
+        for the page on the server that will recive the information when the form
+        is submitted.</p>
+    <p>Forms can be sent using one of two methods: get or post.</p>
+    <p> Get: the values from the form are added to the end of the url specified on the action attribute.
+        Used to get short forms, and retrieving data from the web server.</p>
+    <p>Post: the values are sent in what are known as HTTP headers.
+        Used to allow users to upload a file, sensitive data and
+        to add or delete information from a database.</p>
+
+    <form action="http://www.example.com/subscribe.php" method="get">
+        <p>This is where the form controls will apear.</p>
+    </form>
+
+    <h1>Text Input</h1>
+    
+</body>
+</html>
