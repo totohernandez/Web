@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Output</title>
+</head>
+<body>
+    <h1>Output</h1>
+    <p>JavaScript can display data in different ways:</p>
+    <ul>Writting into an HTML element, using innerHTML</ul>
+    <ul>Writting into the HTML output using document.write()</ul>
+    <ul>Writting into an alert box, using window.alert()</ul>
+    <ul>Writting into the browser console, using console.log()</ul>
+
+    <h1>Using innerHTML</h1>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = 5 + 6;
+    </script>
+
+    <h1>Using document.write()</h1>
+    <p>Never call document.write after the document has finished loading. It will overwrite the whole document.</p>
+    <button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+    <h1>Using window.alert()</h1>
+    <script>
+        window.alert(5 + 6);
+    </script>
+
+    <h1>Using console.log()</h1>
+    <p>For debugging purposes, you can call the console.log() method in the browser to display data.</p>
+    <script>
+        console.log(5 + 6);
+    </script>
+
+    <h1>JavaScript Print</h1>
+    <p>JS does not have any print object or print method.</p>
+    <p>You cannot acess output devices from JS.</p>
+    <p>The only exception is that you can call the window.print() method in the browser to print the content of the current window.</p>
+    <br/ >
+    <p>Click the button to print the current page.</p>
+    <button onclick="window.print()">Print this page</button>
+
+</body>
+</html>
